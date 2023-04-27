@@ -2,7 +2,7 @@ import DB from "@/db";
 
 export default function handler(req, res) {
     DB.instance.query(
-        'select * from locations',
+        'show databases',
         (error, results, fields) => {
             console.log(error, results, fields)
         }
